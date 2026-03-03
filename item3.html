@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours de dessin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="item-bg bg-right bg-dessin">
+
+<!-- HEADER -->
+<div class="site-header">
+  <h1>Au Coeur de Sainte-Béatrix</h1>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <nav class="main-menu" id="mainMenu">
+    <a href="index.html">Accueil</a>
+    <a href="programmation.html">Programmation</a>
+  </nav>
+</div>
+
+<!-- CONTENU -->
+<div class="item-container">
+
+  <div class="item-date">
+    Dimanche<br>
+    12 avril, à 11 h
+  </div>
+
+  <div class="item-title">Brunch du printemps</div>
+
+  <div class="item-subtitle"></div>
+
+  <div class="item-section-title">
+    
+  </div>
+
+  <div class="item-paragraph">
+   Célébrons ensemble l’arrivée 
+du printemps! <br>Un moment festif et rassembleur vous attend pour souligner la saison du renouveau 
+tous ensemble. Ambiance chaleureuse et 
+conviviale assurée !
+<br>
+<b>Billets :</b>
+• 25 $ par adulte<br>
+• 15 $ pour les jeunes de 7 à 14 ans<br>
+• Gratuit pour les enfants de 6 ans et moins<br>
+Les membres de l’OBNL bénéficient d’une  
+réduction de 5$.<br>
+
+<b>Inscription obligatoire d’ici le lundi 6 avril, inclusivement.</b>
+
+  </div>
+
+  <div class="item-highlight">
+   Envie de participer au Brunch de printemps?<br>
+Remplissez le formulaire ci-dessous. <br>Nous procéderons à la transaction et vous recevrez votre billet dans les plus brefs délais.
+  </div>
+
+  <div class="item-small">
+    
+  </div>
+
+  <!-- FORMULAIRE -->
+  <div class="item-form-wrapper">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSepieuyHr13QjeK7IJ1_WFnv1S7nCHAdlzINsttBSqZFnwobA/viewform?usp=publish-editor"
+      width="100%"
+      height="1400"
+      style="border:none; overflow:hidden;"
+      scrolling="no">
+    </iframe>
+  </div>
+
+</div>
+
+<!-- SCRIPT À LA FIN -->
+<script>
+function toggleMenu() {
+  document.getElementById("mainMenu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
