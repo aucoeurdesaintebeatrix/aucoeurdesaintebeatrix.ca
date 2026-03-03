@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Au Coeur de Sainte-Béatrix</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Au Cœur de Sainte-Béatrix</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- BANDE HAUT -->
-<div class="site-header">
-  <h1>Au Coeur de Sainte-Béatrix</h1>
+<!-- =========================
+     HEADER
+========================= -->
+<header class="site-header">
+  <h1 class="site-title">Au Cœur de Sainte-Béatrix</h1>
 
-  <nav class="main-menu">
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <nav class="main-menu" id="mainMenu">
     <a href="index.html">Accueil</a>
     <a href="programmation.html">Programmation</a>
   </nav>
-</div>
+</header>
 
-<!-- SECTION CENTRALE -->
-<div class="hero-logo">
-  <img src="images/logo-rond.png" class="logo-central" alt="Logo">
-</div>
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/logo-rond.png" alt="Logo Au Cœur de Sainte-Béatrix" class="hero-logo">
+  </div>
+</section>
 
-<!-- BANDE BAS -->
-<div class="site-footer-bar">
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="footer-home">
   © 2026 OBNL De L’Église
-</div>
+</footer>
+
+<!-- =========================
+     SCRIPT MENU MOBILE
+========================= -->
+<script>
+function toggleMenu() {
+  document.getElementById("mainMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
