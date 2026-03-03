@@ -9,41 +9,39 @@
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-
-/* =========================
-   BASE
-========================= */
-
 body {
-    margin: 0;
-    background-color: #001f3d;
+  margin: 0;
+  background-color: #001f3d;
 }
 
-/* =========================
-   CONTENEUR GLOBAL
-========================= */
-
-.container-desktop,
-.container-mobile {
-    height: calc(90vh - 70px);
+.container-desktop {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* =========================
-   PASTILLES
-========================= */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  aspect-ratio: 16 / 9;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+}
 
 .pastille {
-    position: absolute;
-    width: 3.5%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  width: 3.5%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
 
-/* Couleurs */
 .c1 { background-color: #e94b3c; }
 .c2 { background-color: #cb6ce6; }
 .c3 { background-color: #9dd241; }
@@ -51,31 +49,6 @@ body {
 .c5 { background-color: #d4c5ff; }
 .c6 { background-color: #cb6ce6; }
 
-/* =========================
-   DESKTOP
-========================= */
-
-.container-desktop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-wrapper {
-    position: relative;
-    width: 160%;
-    max-width: 1600px;
-    aspect-ratio: 16 / 9;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 65%;
-}
-
-/* Positions desktop */
 .d1 { top: 37%; left: 32%; }
 .d2 { top: 42%; left: 61.5%; }
 .d3 { top: 57.8%; left: 29.5%; }
@@ -83,43 +56,9 @@ body {
 .d5 { top: 89.6%; left: 43%; }
 .d6 { top: 68.5%; left: 54%; }
 
-/* =========================
-   MOBILE
-========================= */
-
-.container-mobile {
-    display: none;
-    position: relative;
-}
-
-.container-mobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 @media (max-width: 768px) {
-
-    .container-desktop {
-        display: none;
-    }
-
-    .container-mobile {
-        display: block;
-    }
-
-    .pastille {
-        width: 7%;
-    }
-
-    .m1 { top: 20.25%; left: 29%; }
-    .m2 { top: 21%; left: 51.5%; }
-    .m3 { top: 45%; left: 28.2%; }
-    .m4 { top: 47.5%; left: 58.5%; }
-    .m5 { top: 81%; left: 31%; }
-    .m6 { top: 62.5%; left: 45%; }
+  .container-desktop { display: none; }
 }
-
 </style>
 
 </head>
@@ -128,44 +67,27 @@ body {
 
 <div class="site-header">
   <h1>Au Coeur de Sainte-Béatrix</h1>
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <nav class="main-menu" id="mainMenu">
-    <a href="index.html">Accueil</a>
-    <a href="programmation.html">Programmation</a>
-  </nav>
 </div>
 
-<!-- DESKTOP -->
 <div class="container-desktop">
-    <div class="image-wrapper">
-        <img src="images/hero6.jpg" alt="Programmation Desktop">
+  <div class="image-wrapper">
+    <img src="images/hero6.jpg" alt="Programmation">
 
-        <a href="item1.html" class="pastille d1 c1"></a>
-        <a href="item2.html" class="pastille d2 c2"></a>
-        <a href="item3.html" class="pastille d3 c3"></a>
-        <a href="item4.html" class="pastille d4 c4"></a>
-        <a href="item5.html" class="pastille d5 c5"></a>
-        <a href="item2.html" class="pastille d6 c6"></a>
-    </div>
+    <a href="item1.html" class="pastille d1 c1"></a>
+    <a href="item2.html" class="pastille d2 c2"></a>
+    <a href="item3.html" class="pastille d3 c3"></a>
+    <a href="item4.html" class="pastille d4 c4"></a>
+    <a href="item5.html" class="pastille d5 c5"></a>
+    <a href="item2.html" class="pastille d6 c6"></a>
+  </div>
 </div>
 
-<!-- MOBILE -->
-<div class="container-mobile">
-    <img src="images/hero5.jpg" alt="Programmation Mobile">
-
-    <a href="item1.html" class="pastille m1 c1"></a>
-    <a href="item2.html" class="pastille m2 c2"></a>
-    <a href="item3.html" class="pastille m3 c3"></a>
-    <a href="item4.html" class="pastille m4 c4"></a>
-    <a href="item5.html" class="pastille m5 c5"></a>
-    <a href="item2.html" class="pastille m6 c6"></a>
-</div>
-
-<script>
-function toggleMenu() {
-  document.getElementById("mainMenu").classList.toggle("show");
-}
-</script>
+<footer class="footer-programmation">
+  <div class="footer-content">
+    <b>IIMPORTANT<b> : Afin d’aider l’organisme à bien organiser chacune des activités selon le nombre de personnes attendues, nous vous prions de prendre un instant <br>pour vous inscrire à l’activité de votre choix. Un immense MERCI pour votre collaboration !
+<br>Pour l’achat de billets et pour consulter tous les détails de la programmation, visitez notre page Facebook : Au Cœur de Sainte-Béatrix
+  </div>
+</footer>
 
 </body>
 </html>
