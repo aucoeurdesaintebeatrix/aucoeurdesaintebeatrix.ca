@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: white;
-  color: #222;
+  color: #ffffff;
 }
 
 /* =========================================
@@ -23,18 +23,27 @@ body {
 
 .site-header {
   height: 70px;
-  background: rgba(0, 0, 0, 0.95);
+  background: #001f3d;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1000;
+   z-index: 201;
+
 }
 
 .site-header h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
   color: #ffffff;
+   z-index: 201;
+}
+.main-menu {
+  position: absolute;
+  right: 60px;
+  display: flex;
+  gap: 25px;
+  z-index: 201;
 }
 
 /* =========================================
@@ -74,12 +83,15 @@ body {
   right: 60px;
   display: flex;
   gap: 25px;
+  z-index: 200;
+   color: #165390;
 }
 
 .main-menu a {
   text-decoration: none;
-  color: #fefeff;
+  color: #ffffff;
   font-weight: 600;
+  z-index: 200;
 }
 
 /* HAMBURGER */
@@ -170,6 +182,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1600px;
+  z-index: 10;
 }
 
 .image-wrapper img {
@@ -225,7 +238,8 @@ body {
   background:#e94b3c;
   color:white;
   padding:2rem;
-  text-align:center;
+  text-align:centerleft;
+  font-size: .8rem;
 }
 
 /* =========================================
@@ -241,8 +255,10 @@ body {
   }
 
   .program-portrait {
-    display: flex;
-  }
+  height: 100vh;
+  margin-top: -70px;
+  padding-top: 70px;
+}
 
   .pastille {
     width: 7%;
@@ -332,6 +348,7 @@ body {
   color: #fbfbfb;
   z-index: 2000;
   font-weight: bold;
+  z-index: 2000;
 }
 
 .back-arrow:hover {
@@ -344,4 +361,9 @@ body {
 
 .page-programmation {
   background-color: #001f3d;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 1;
 }
