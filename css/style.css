@@ -74,6 +74,7 @@ body {
   width: 600px;
   max-width: 85%;
   height: auto;
+  margin-top:-250px;
 }
 
 /* MENU */
@@ -117,6 +118,19 @@ body {
   padding: 0 2rem;
   color: #001f3d;
 }
+.item-logo {
+  
+  font-family: 'Anton', sans-serif;
+  line-height: 1.4;
+  font-size: .7rem;
+  margin: 8rem auto;
+  padding: 0 2rem;
+  position: absolute;
+  left: 10px;
+  margin-top: 690px;
+  color: #406cd0;
+}
+
 
 .item-title {
   font-family: 'Anton', sans-serif;
@@ -361,4 +375,20 @@ body {
 .image-wrapper {
   position: relative;
   z-index: 1;
+}
+
+.liens-externes {
+  position: absolute;
+  
+  left: 5px;
+  margin-top: 80px;
+  z-index: 2000;
+}
+
+.icone-lien {
+  max-width: 70%;
+  width: 70px;
+  margin-left: 35px;
+  margin-top:650px;
+  z-index: 2000;
 }
