@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours de dessin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-evenement">
+
+  <a href="javascript:history.back()" class="back-arrow">←</a>
+
+<!-- HEADER -->
+<div class="site-header">
+  <h1>Au Coeur de Sainte-Béatrix</h1>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <nav class="main-menu" id="mainMenu">
+    <a href="index.html">Accueil</a>
+    <a href="programmation.html">Programmation</a>
+  </nav>
+</div>
+
+<!-- CONTENU -->
+<div class="item-container">
+
+  <div class="item-date">
+    Samedi<br>
+    23 mai, à 20 h
+  </div>
+
+  <div class="item-title">Les voix de la Rivière <br><small><i>Entre tendresse et tempête</i></small></div>
+
+ <br>
+
+  <div class="item-paragraph">
+  Après une note de départ tendre, ce concert laisse s'exprimer la colère, en passant par une touche d'humour. L'ascension de l'émotion nous mène vers un amour déchiré, jusqu'à retrouver la paix, la méditation et enfin, nous encourage à chanter d'une seule voix, avec tendresse.<br>
+
+<br>
+<strong>Tarifs :</strong><br>
+10 $ pour les non-membres<br>
+5 $ pour les membres<br>
+Gratuit pour les enfants de moins de 11 ans<br><br>
+
+  <div class="item-paragraph">
+  <strong>Inscrivez-vous </strong>dès maintenant et une personne d’Au Coeur de Sainte-Béatrix communiquera avec vous pour compléter la transaction et vous faire parvenir votre ou vos billets.
+  <br><br>
+
+  <!-- FORMULAIRE -->
+   
+  <div class="item-form-wrapper">
+    <div class="form-titre2">
+    Achat de billet pour le spectacle<br>
+
+  </div>
+  <div class="form-titre">
+
+    Les voix de la Rivière<br>
+    Samedi 23 mai, 20 h
+  </div>
+    <form class="custom-form" id="brunchForm">
+
+      <div class="form-row">
+  <div class="form-group">
+     <label>Prénom</label>
+          <input type="text" id="prenom" required>
+        </div>
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" id="nom" required>
+        </div>
+</div>
+
+<div class="form-row">
+  <div class="form-group">
+    <label>Courriel</label>
+    <input type="email" id="courriel" required>
+  </div>
+
+  <div class="form-group">
+    <label>Téléphone</label>
+    <input type="tel" id="telephone">
+  </div>
+</div>
+
+      <!-- MEMBRE -->
+     <div class="form-row">
+
+  <div class="form-group">
+    <label>Êtes-vous membre ?</label>
+    <select id="estMembre" onchange="toggleMembreField()">
+      <option value="non">Non</option>
+      <option value="oui">Oui</option>
+    </select>
+  </div>
+
+  <div class="form-group" id="numeroMembreGroup" style="display:none;">
+    <label>Numéro(s) de membre</label>
+    <input type="text" id="numeroMembre" placeholder="Ex : R0001, R0002,...">
+  </div>
+
+</div>
+
+      <!-- BILLETS -->
+      <div class="form-group">
+        <label>Billets</label>
+        <table class="ticket-table">
+          <thead>
+            <tr>
+              <th> </th>
+              <th>Prix</th>
+              <th>Quantité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Membre</td>
+              <td>5 $</td>
+              <td><input type="number" id="membreQty" min="0" value="0" onchange="calculerTotal()"></td>
+            </tr>
+            <tr>
+              <td>Non-membre</td>
+              <td>10 $</td>
+              <td><input type="number" id="nonMembreQty" min="0" value="0" onchange="calculerTotal()"></td>
+            </tr>
+            <tr>
+              <td>Enfant (-11 ans)</td>
+              <td>Gratuit</td>
+              <td><input type="number" id="enfant" min="0" value="0"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="total-box">
+        Total : <span id="total">0 $</span>
+      </div>
+
+     <p><span style="font-size: 16pt;"><strong><span style="font-size: 24pt;">Paiement</span></strong><br />Veuillez effectuer votre paiement par virement Interac &agrave; l&rsquo;adresse suivante : <strong>aucoeurdesaintebeatrix@gmail.com</strong></span></p>
+<p><span style="font-size: 18pt;">La question de s&eacute;curit&eacute; : </span><br /><strong><span style="font-size: 18pt;">Au&nbsp;centre du village</span></strong></p>
+<p><span style="font-size: 18pt;">R&eacute;ponse : <strong>&Eacute;glise<br /></strong></span><br /><span style="font-size: 12pt;">Merci d&rsquo;indiquer dans le message du virement le nom de la personne ayant compl&eacute;t&eacute; le formulaire d&rsquo;inscription afin de faciliter le suivi.<br /></span><br /><span style="font-size: 12pt;">Une fois le paiement re&ccedil;u, le ou les billets seront envoy&eacute;s par courriel &agrave; l&rsquo;adresse de la personne ayant rempli le formulaire.</span></p>
+<p><span style="font-size: 12pt;">Veuillez noter qu&rsquo;aucun billet ne sera vendu &agrave; la porte.</span><br /><br />
+<span style="font-size: 16pt;">Pour toute question : <strong>aucoeurdesaintebeatrix@gmail.com</strong></span>
+   <p style="text-align: center;"><span style="font-size: 28pt;"><strong>Merci beaucoup <br />de votre confiance.<br /></strong></span><br /><span style="font-size: 18pt;"><strong>Au plaisir de vous rencontrer bient&ocirc;t !<br /></strong></span><br /></p>
+<button type="submit" class="submit-btn">Envoyer l’inscription</button>
+</form>
+    </div>
+    
+
+      <button type="submit" class="submit-btn">Envoyer</button>
+      
+  </form>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mainMenu").classList.toggle("show");
+}
+
+function toggleMembreField() {
+  const val = document.getElementById("estMembre").value;
+  document.getElementById("numeroMembreGroup").style.display =
+    val === "oui" ? "block" : "none";
+}
+
+function calculerTotal() {
+  const m = parseInt(document.getElementById("membreQty").value) || 0;
+  const n = parseInt(document.getElementById("nonMembreQty").value) || 0;
+  const total = (m * 5) + (n * 10);
+  document.getElementById("total").textContent = total + " $";
+}
+
+document.getElementById("brunchForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const estMembre = document.getElementById("estMembre").value;
+  const numero = document.getElementById("numeroMembre").value.trim();
+  const m = parseInt(document.getElementById("membreQty").value) || 0;
+  const n = parseInt(document.getElementById("nonMembreQty").value) || 0;
+  const enfant = parseInt(document.getElementById("enfant").value) || 0;
+  const total = (m * 5) + (n * 10);
+
+  // Validation
+  if (m === 0 && n === 0) {
+    alert("Veuillez sélectionner au moins un billet.");
+    return;
+  }
+
+  if (estMembre === "oui" && numero === "") {
+    alert("Veuillez entrer votre numéro de membre.");
+    return;
+  }
+
+  // Données
+  const data = {
+  date: new Date().toLocaleString(),
+  prenom: document.getElementById("prenom").value,
+  nom: document.getElementById("nom").value,
+  courriel: document.getElementById("courriel").value,
+  telephone: document.getElementById("telephone").value,
+  estMembre: estMembre,
+  numeroMembre: numero,
+  membreQty: m,
+  nonMembreQty: n,
+  enfant: enfant,
+  total: total
+};
+const btn = document.querySelector(".submit-btn");
+btn.disabled = true;
+btn.innerText = "Envoi en cours...";
+  // Envoi vers Google
+  fetch("https://script.google.com/macros/s/AKfycbwxkjGrCoNVgXd5peQklZx1jxzqDX04tV4Fu0DTIT8FP2EdWlYwfr14EmWNqeKIamjWqQ/exec", {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(() => {
+    const message = document.createElement("div");
+message.innerHTML = "✅ Merci ! Votre réservation a été envoyée.";
+message.style.background = "#d4edda";
+message.style.padding = "10px";
+message.style.marginTop = "10px";
+message.style.borderRadius = "5px";
+
+
+document.getElementById("brunchForm").appendChild(message);
+    document.getElementById("brunchForm").reset();
+    calculerTotal();
+  })
+  .catch(error => {
+    alert("Erreur lors de l'envoi.");
+    console.error(error);
+  });
+});
+
+// Initialisation
+calculerTotal();
+</script>
+
+
+</body>
+</html>
