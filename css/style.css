@@ -393,3 +393,295 @@ body {
   width: 40px;
   height: auto;
 }
+
+
+
+
+
+/* FORMULAIRE PERSONNALISÉ */
+.custom-form {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.custom-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.custom-form input,
+.custom-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.custom-form input:focus,
+.custom-form select:focus {
+  outline: none;
+  border-color: #8a5a2b;
+  box-shadow: 0 0 0 3px rgba(138, 90, 43, 0.15);
+}
+
+.custom-form button {
+  background: #8a5a2b;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 10px;
+}
+
+.custom-form button:hover {
+  background: #6f451f;
+}
+
+@media (max-width: 768px) {
+  .custom-form {
+    padding: 20px;
+    margin: 20px 15px;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
+}
+/* FORMULAIRE PERSONNALISÉ */
+.custom-form {
+  background-color: #fff4e4;
+  padding: 32px;
+  border-radius: 18px;
+  max-width: 760px;
+  margin: 30px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.form-titre {
+ font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+  color: #222;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.form-titre2 {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  color: #222;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.custom-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.custom-form input,
+.custom-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.custom-form input:focus,
+.custom-form select:focus {
+  outline: none;
+  border-color: #8a5a2b;
+  box-shadow: 0 0 0 3px rgba(138, 90, 43, 0.15);
+}
+
+.form-total {
+  margin-top: 10px;
+  padding: 16px 18px;
+  background: #f5f1ec;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2d6ca;
+}
+
+.form-total strong {
+  font-size: 1.4rem;
+  color: #8a5a2b;
+}
+
+.custom-form button {
+  background: #8a5a2b;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 10px;
+}
+
+.custom-form button:hover {
+  background: #6f451f;
+}
+
+.form-note {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.confirmation-message {
+  margin-top: 15px;
+  background: #e8f7e8;
+  color: #246b24;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #b8dfb8;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .custom-form {
+    padding: 22px;
+    margin: 20px 15px;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
+
+  .form-total {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.billets-table-wrapper {
+  margin-top: 10px;
+}
+
+.table-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.billets-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.billets-table th,
+.billets-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.billets-table th {
+  background: #f3ede7;
+  color: #333;
+  font-weight: bold;
+}
+
+.billets-table tr:last-child td {
+  border-bottom: none;
+}
+
+.billets-table input {
+  width: 90px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.total-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#nbPersonnes {
+  text-align: left;
+}
+
+#montantTotal {
+  margin-left: auto;
+  text-align: right;
+}
+.page-evenement .item-form-wrapper {
+  background-color: #efd9ba;
+  padding: 45px; <label>Billets</label>
+
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
