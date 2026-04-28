@@ -190,8 +190,9 @@ body {
 .program-portrait {
   height: calc(100vh - 70px);
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* IMPORTANT */
   justify-content: center;
+  padding-top: 80px; /* valeur ABSOLUE */
 }
 
 /* image wrapper */
