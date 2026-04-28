@@ -192,7 +192,7 @@ body {
   display: flex;
   align-items: flex-start; /* IMPORTANT */
   justify-content: center;
-  padding-top: 40px; /* valeur ABSOLUE */
+  padding-top: 20px; /* valeur ABSOLUE */
 }
 
 /* image wrapper */
